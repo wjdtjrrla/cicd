@@ -19,9 +19,9 @@ jobs:
         with:
           token: ${{ secrets.CLOUDTYPE_TOKEN }}
           project: wjdtjr001226/cicd # 워크스페이스 이름/프로젝트 이름 ex) nbc.docker/cicd
-          stage: master
+          stage: main
           yaml: |
-            name: # 프로젝트 이름 ex) `cicd`
+            name: cicd # 프로젝트 이름 ex) `cicd`
             app: java@17
             options:
               ports: 8080
